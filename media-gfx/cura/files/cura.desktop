@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cura
+Comment=3D printer / slicing GUI built on top of the Uranium framework
+Exec=/usr/bin/cura
+Icon=cura-icon
+Terminal=false
+Categories=Graphics;3DGraphics;
