@@ -1,8 +1,8 @@
 # Hi!
 
-These are my personal Gentoo ebuilds.
+These are my personal Gentoo ebuilds overlay.
 
-Use with caution.
+Use with caution, however feel free to use.
 
 Create `/etc/portage/repos.conf/atoomnetmarc.conf`:
 ```ini
