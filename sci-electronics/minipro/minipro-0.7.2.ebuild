@@ -16,14 +16,20 @@ KEYWORDS="~amd64"
 RDEPEND="virtual/libusb:1"
 DEPEND="${RDEPEND}"
 
+src_compile()
+{
+	emake CC=$(tc-getCC) PREFIX="${EPREFIX}/usr" COMPLETIONS_DIR="$(get_bashcompdir)"
+}
+
+src_install()
+{
+	emake CC=$(tc-getCC) DESTDIR="${D}" PREFIX="${EPREFIX}/usr" COMPLETIONS_DIR="$(get_bashcompdir)" install
+}
+
 pkg_postinst() {
 	udev_reload
 }
 
 pkg_postrm() {
 	udev_reload
-}
-
-src_install() {
-	emake PREFIX="/usr" DESTDIR="${D}" install
 }
