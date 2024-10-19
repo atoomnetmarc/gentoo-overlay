@@ -6,4 +6,4 @@ Comment=An all-round MQTT client that provides a structured topic overview
 Exec=/usr/bin/mqtt-explorer
 Icon=mqtt-explorer-icon
 Terminal=false
-Categories=Programming
+Categories=Network;Utility;
